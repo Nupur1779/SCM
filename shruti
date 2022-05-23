@@ -1,0 +1,31 @@
+#include <iostream>
+using namespace std;
+class Rectangle
+{
+    public:
+    int x,y;
+    Rectangle(){x=5,y=10;}
+    int area()
+    {
+        return x*y;
+    }
+};
+class Circle
+{
+    public:
+    int r;
+    Circle(){}
+    int ar_circle()
+    {
+        return(22/7*r*r);
+    }
+};
+class Cylinder:public Rectangle,public Circle
+{
+    public:
+    void volume()
+    {
+        cout<<(ar_circle()*y);
+    }
+};
+int main
